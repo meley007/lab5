@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Render</title>
+</head>
+<body>
+    <label for="tehsil">
+        Tehsil
+
+    </label>
+<input type="text" id="tehsil">
+<br>
+
+    <label for="is">
+        Is
+
+    </label>
+<input type="text" id="is">
+<br>
+    <label for="bacariq">
+        Bacariq
+
+    </label>
+<input type="text" id="bacariq">
+<br>
+
+<button id="yadda-saxla">Yadda Saxla</button>
+<button id="sifirla">Sifirla</button>
+
+
+
+
+</body>
+</html>
+
+<script>
+    fetch("data.json")
+    .then(response=>{
+        response.json()
+    })
+    .then(data=>{
+        console.log(data)
+    })
+</script>
